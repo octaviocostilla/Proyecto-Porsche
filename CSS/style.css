@@ -1,0 +1,230 @@
+/*PAG INDEX*/
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.header{
+    font-family: "Oswald", sans-serif;
+    color: #f9fafc;
+    background-color: white;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+/*MENU HAMBURGUESA*/
+}
+.nav{
+    --state-close: scale(0);
+    --state-hamburguesa: scale(1);
+    --state-menu: translate(-100%);
+
+    padding: 40px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+.nav:target{
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-hamburguesa: scale(0);
+}
+
+.nav_logo{
+    color: black;
+    font-size: 2.5rem;
+    z-index: 1;
+
+}
+.nav_hamburguesa,
+.nav_close{
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+.nav_hamburguesa{
+    transform: var(--state-hamburguesa);
+}
+.nav_close{
+    transform: var(--state-close);
+}
+
+.nav_icon{
+    width: 40px;
+}
+
+.nav_links{
+    background-color: rgba(0, 0, 0, 0.774);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    display: grid;
+    align-content: center;
+    gap: 2em;
+    padding-left: 5%;
+
+    transform: var(--state-menu);
+    transition: .3s transform;
+}
+
+.nav_items{
+    list-style: none;
+}
+.nav_link:hover{
+    color: #727272;
+}
+
+.nav_link{
+    color: #f9fafc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.section-content{
+        min-height: 100vh;
+        display: flex;
+        align-items:flex-end;
+}
+.section-h1{
+    
+    font-size: 50px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: "Oswald", sans-serif;
+
+}
+
+section{font-family: "Varela Round", sans-serif;}
+h2{font-family: "Varela Round", sans-serif;}
+
+/*SLIDE DE IMAGENES*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.slide container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider input{
+    visibility: hidden;
+    display: none;
+}
+
+.botones{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    gap: 10px;
+}
+
+.botones label{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 1;
+    transition: 300mls;
+}
+
+.botones label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+
+.slider input:nth-child(1):checked ~ .botones label:nth-child(1),
+.slider input:nth-child(2):checked ~ .botones label:nth-child(2),
+.slider input:nth-child(3):checked ~ .botones label:nth-child(3)
+{
+    opacity: 1;
+    scroll-margin: 1.2;
+    width: 40px;
+    border-radius: 100px;
+}
+
+.contenido{
+    position: relative;
+    width: 300vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+
+.primerslide,.segundaslide,.terceraslide{
+    position:relative;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primerslide{
+    background-image: url(../fotos-autos/Porsche\ blanco\ en\ nieve.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 500px;
+    border-radius: 25px;    
+}
+
+.segundaslide{
+    background-image: url(../fotos-autos/Porsche\ negro\ de\ atras.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.terceraslide{
+    background-image: url(../fotos-autos/Porsce\ para\ slide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 500px;
+    border-radius: 25px
+}
+
+.slider input:nth-child(1):checked ~ .contenido{
+    left: 0;
+}
+
+.slider input:nth-child(2):checked ~ .contenido{
+    left: -79vw;
+}
+
+.slider input:nth-child(3):checked ~ .contenido{
+    left: -158vw;
+}
+.texto slide1{
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+
+
+}
+
+/*PARTE INFERIOR DEL INDEX*/
+
+.section-h1, .textosection{
+    color: black;
+}
+

@@ -88,7 +88,7 @@
 }
 
 .section-content{
-        min-height: 100vh;
+        height: 100%;
         display: flex;
         align-items:flex-end;
 }
@@ -107,15 +107,12 @@ h2{font-family: "Varela Round", sans-serif;}
 
 /*SLIDE DE IMAGENES*/
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.slide container{
-    position: relative;
+.slider{
     width: 100%;
-    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+
 }
 
 .slider input{
@@ -160,18 +157,17 @@ h2{font-family: "Varela Round", sans-serif;}
 
 .contenido{
     position: relative;
-    width: 300vw;
+    width: 300%;    
     display: flex;
     transition: 400ms ease-in-out;
 }
 
 .primerslide,.segundaslide,.terceraslide{
     position:relative;
-    width: 100vw;
-    height: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 70vh;
+    display: flex; 
+    
 }
 
 .primerslide{
@@ -179,8 +175,6 @@ h2{font-family: "Varela Round", sans-serif;}
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 500px;
     border-radius: 25px;    
 }
 
@@ -189,8 +183,6 @@ h2{font-family: "Varela Round", sans-serif;}
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 500px;
     border-radius: 25px;
 }
 
@@ -198,9 +190,7 @@ h2{font-family: "Varela Round", sans-serif;}
     background-image: url(../fotos-autos/Porsce\ para\ slide.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 500px;
+    background-repeat: no-repeat;;
     border-radius: 25px
 }
 
@@ -209,11 +199,11 @@ h2{font-family: "Varela Round", sans-serif;}
 }
 
 .slider input:nth-child(2):checked ~ .contenido{
-    left: -79vw;
+    left: -100%;
 }
 
 .slider input:nth-child(3):checked ~ .contenido{
-    left: -158vw;
+    left: -200%;
 }
 .texto slide1{
     font-size: 1.5rem;

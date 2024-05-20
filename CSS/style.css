@@ -218,3 +218,30 @@ h2{font-family: "Varela Round", sans-serif;}
     color: black;
 }
 
+/*formulario*/
+
+.form{
+    background-image: url(/fotos-autos/Porsche\ negro\ de\ atras.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.5rem;
+    color: rgb(226, 228, 228);position: center;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2,1fr;
+    grid-gap: 5opx;
+    margin-top: 90px;
+}
+.tag{
+    position: top;
+    size: 25px;
+    font-style: oblique;
+    font-family: "Oswald", sans-serif;
+
+
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche</title>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
    <head>
@@ -21,8 +22,36 @@
 </head>
 <h1>Formulario de Reservas</h1> 
 <main>
+    
+    <form id="form" action="action="https://formsubmit.co/facuyromi@aol.com" method="POST"" class="form">
+        <h3 class="tag"><span>HABLEMOS</span></h3>
+        <label for="name">Nombre Completo </label>
+        <input type="text" name="name">
+        <label for="email">Correo electrónico </label>
+        <input type="text" name="email" >
+        <label for="subject">Asunto</label>
+        <input type="text" name="subject"
+        <label for="comments">Comentarios</label>
+        <textarea name="comments" cols="15" rows="6"></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+
 </main>
 
 </body>
+<script>
+   const $form =  document.querySelector ('#form')
+   const $buttonMailto =document.querySelector('#trucazo')
+   $form.addEventListener('submit', handlesubmit)
+   function handlesubmit(event){
+event.preventDefault()
+const form = new FormData(this)
+console.log (form.get('name'))
+$buttonMailto.setAttribute('href','mailto:facuyromi@aol.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}')
+   }
+   $buttonMailto.click()
+</script>
 <footer></footer>
 </html>

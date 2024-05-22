@@ -1,0 +1,26 @@
+[33mcommit 65208f8b8d28612b17100100f8c12345e6052d08[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/facundo0-formulario[m[33m)[m
+Author: hdaniel-2024 <titoelprogramador@gmail.com>
+Date:   Sun May 19 13:08:31 2024 -0300
+
+    En head modifico Autor, Keywords, shortcut icon
+
+[33mcommit e1baad6aaba9112a9388e434e2accd5662649f6c[m
+Merge: 3bb969d 0449842
+Author: octaviocostilla <114194097+octaviocostilla@users.noreply.github.com>
+Date:   Fri May 17 20:27:31 2024 -0300
+
+    Merge pull request #1 from octaviocostilla/mejoras-slider
+    
+    mejoras en el slider
+
+[33mcommit 04498420c81f6440e6ae145fd4c2007675e19d45[m[33m ([m[1;31morigin/mejoras-slider[m[33m, [m[1;32mmejoras-slider[m[33m)[m
+Author: octaviocostilla <costillaoctavio@gmail.com>
+Date:   Fri May 17 20:15:08 2024 -0300
+
+    mejoras en el slider
+
+[33mcommit 3bb969d1b564789968afb7ae5221fab1afbab4ce[m
+Author: octaviocostilla <costillaoctavio@gmail.com>
+Date:   Thu May 16 17:15:19 2024 -0300
+
+    first commit

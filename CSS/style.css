@@ -167,6 +167,7 @@ h2{font-family: "Varela Round", sans-serif;}
     width: 100%;
     height: 70vh;
     display: flex; 
+    align-items: end;
     
 }
 
@@ -205,19 +206,126 @@ h2{font-family: "Varela Round", sans-serif;}
 .slider input:nth-child(3):checked ~ .contenido{
     left: -200%;
 }
-.texto slide1{
+.contenido h1{
     font-size: 1.5rem;
-    font-family: "Oswald", sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
 
 
 }
 
 /*PARTE INFERIOR DEL INDEX*/
-
-.section-h1, .textosection{
+section-h1, .textosection{
+    font-size: 20px;
     color: black;
 }
 
+.section-h1, .textosection h2{
+    color: rgb(193, 0, 0);
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(56, 56, 56);
+    color: #f9fafc;
+}
+
+.footer-info {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer-info .footer-width {
+    padding: 0 15px;
+}
+
+.footer-info h2 {
+    margin-bottom: 20px;
+}
+
+.nosotros , .contacto {
+    font-family:"Oswald", sans-seri;
+    width: 40%;
+}
+
+.link{
+    width: 20%;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media ul {
+    display: flex; 
+}
+
+.social-media ul li a{
+    display: inline-block;
+    margin-right: 50px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+.social-media ul li a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+} 
+
+.link ul li a{
+    font-family:"Oswald", sans-seri;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.link ul li a:hover{
+    color: rgb(193, 0, 0);
+}
+
+.contacto ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contacto ul li span{
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.copy-right{
+    padding: 15px 0;
+    text-align: center;
+    background-color: #00000096;
+}
+@media screen and (max-width:992px){
+    .nosotros , .contacto {
+        width: 35%;
+    }
+
+    .link{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:767px){
+    .nosotros , .contacto , .link{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-info{
+        flex-direction: column;
+    }
+}
 /*formulario*/
 
 .form{
@@ -242,6 +350,5 @@ h2{font-family: "Varela Round", sans-serif;}
     size: 25px;
     font-style: oblique;
     font-family: "Oswald", sans-serif;
-
-
 }
+> 1450b96bb420654dc61288719d9addd5bf2dcb01

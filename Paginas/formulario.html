@@ -4,65 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/formulario.css">
 </head>
 <body>
-   <head>
-    <h1><a href="index.html">PORSCHE</a></h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html">inicio</a></li>
-            <li><a href="sobrenosotros.html">sobre nosotros</a></li>
-            <li><a href="Modelos.html">Modelos</a></li>
-            <li><a href="">formulario de reservas</a></li>
-
-
+    <head>
+    
+    <nav class="nav container" id="nav">
+        <h2 class="nav_logo">PORSCHE</h2>
+        <ul class="nav_links">
+            <li class="nav_items"><a href="/index.html" class="nav_link">inicio</a></li>
+            <li class="nav_items"><a href="/Paginas/sobrenosotros.html" class="nav_link">sobre nosotros</a></li>
+            <li class="nav_items"><a href="/Paginas/Modelos.html" class="nav_link">modelos</a></li>
+            <li class="nav_items"><a href="/Paginas/formulario.html" class="nav_link">formulario de reservas</a></li>
         </ul>
+        <a href="#nav" class="nav_hamburguesa">
+            <img src="/fotos-autos/menu icono segunda opcion.png" class="nav_icon">
+        </a>
+        <a href="#" class="nav_close">
+            <img src="/fotos-autos/icon close.png" class="nav_icon" >
+        </a>
     </nav>
 </head>
+
 <h1>Formulario de Reservas</h1> 
 <main>
-    
-<<<<<<< HEAD
-    <form id="form" action="action="https://formsubmit.co/facuyromi@aol.com" method="POST" class="form">
-        <h3 class="tag"><span>CONTACTANOS</span></h3>
-=======
-    <form id="form" action="action= https://formsubmit.co/facuyromi@aol.com" method="POST" class="form">
-        <h3 class="tag"><span>HABLEMOS</span></h3>
->>>>>>> 50c8ca9aac38696c3b89b1b7168876d6217fbc26
-        <label for="name">Nombre Completo </label>
-        <input type="text" name="name" >
-        <label for="email">Correo electrónico </label>
-        <input type="text" name="email" >
-        <label for="subject">Asunto</label>
-        <input type="text" name="subject">
-        <label for="comments">Comentarios</label>
-        <textarea name="comments" cols="15" rows="6"></textarea>
-        
-        <input type="submit" value="Enviar">
+    <div class="content">
+        <h1 class="logo"><span>Contactanos</span></h1>
+        <div class="contact-wraper">
+            <div class="contact-form">
+                <h3>Contactanos</h3>
+                <form action="">
+                    <p>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre">
+                    </p>
+                    <p>
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email">
+                    </p>
+                    <p>
+                        <label for="Telefono">Telefono</label>
+                        <input type="tel" name="Telefono" id="Telefono">
+                    </p>
+                
+                    <p>
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" name="Asunto" id="Asunto">
+                    </p>
+                    <p class="block">
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" cols="40" rows="14"></textarea>
+                    </p>
+                    <p class="block">
+                    <button type="submit">Enviar</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="Direccion">Adress</i></li>
+                    <li><i class="Telefono">Telefono</i></li>
+                    <li><i class="Correo">Correo</i></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo hic molestiae sunt eos iusto, enim voluptatum corporis voluptate eligendi reiciendis.
+                </p>
+                <p>Company.com</p>
+            </div>
 
-        <input type="hidden" name="_next" value="http://localhost:8000">
-        <input type="hidden" name="_captcha" value="false">
-
-    </form>
+        </div>
+    </div>
 
 
 </main>
 
 </body>
-<script>
-    var form = document.getElementById('form')
-    form.addEventListener('Submit'),function(event){
-    event.preventDefault()
-    var username=document.getElementById('name').value
-    console.log(name)
-    var email=document.getElementById('email').value
-    console.log(email)
+<script src="/Paginas/java.js/js.js"></script>
 
-    }
+<div class="footer-info">
+    
+    
+    <div class="footer-width contacto">
+        <h2>Contacto</h2>
+        <ul>
+                <p>
+                    Junín 250 A,S2013 DJF, Santa Fe, Argentina
+                </p>
+            </li>
+                <p>info@porsche.com.ar</p>        
+            </li>
+            <li>   
+                <p>+54 11 4795-9786</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="copy-right">
+    <p>©COPYRIGHT 2024 PORSCHE-PAG-FICCION AL RIGHTS RESERVERD.</p>
+</div>
+</footer>
 
-</script>
-
-
-<footer></footer>
 </html>

@@ -2,41 +2,132 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="Autor" content="Grupo 14 CaC">
+    <meta name="keywords" content="Porsche, Html, Css,  JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Porsche-Sobre Nosotros</title>
+    <link rel="shortcut icon" href="../fotos-autos/icono-Posche.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Varela+Round&display=swap" rel="stylesheet">
-    <title>Porsche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-   <header class="header">
-    <h1><a href="index.html">PORSCHE</a></h1>
-    <nav class="navbar">
-        <div class="menu-container"><ul class="ul-links">
-            <li><a href="../index.html">inicio</a></li>
-            <li><a href="">sobre nosotros</a></li>
-            <li><a href="Modelos.html">Modelos</a></li>
-            <li><a href="formulario.html">formulario de reservas</a></li>
-
-
-        </ul>
-    </div>
-        
-    </nav>
-   </header> 
-<h1>Sobre Nosotros</h1>
-<p class="sobrenosotros">
-    Porsche, no sería lo mismo sin todo lo logrado por Ferry Porsche, el hijo del fundador Ferdinand Porsche, que hizo de una oficina de ingeniería donde trabajaba su padre, la marca de deportivos (y otros ya no tanto) que conocemos hoy.
-    La historia comienza cuando en 1948, Ferry salió a buscar el automóvil que siempre había soñado, no lo encontró y decidió construirlo. Ferry se muestra así como un hombre inquieto, visionario y un emprendedor impresionante. Así, bajo su dirección se sentaron las bases de lo comenzaría a ser una de las fábricas de automóviles más exclusivas de la historia.
-
-
-El primer deportivo que sale de esta aún pequeña compañía es el Porsche 356, seguido del Porsche 911. Durante cinco décadas Ferry dirigió con gran éxito esta factoría alemana, bajo unos estándares y detalles de diseño y tecnología, aplicables hoy en día a cualquiera de sus modelos, haciéndole como el principal fabricante de vehículos deportivos del mundo.
-</p>
-<h2>Nuestra Historia</h2>
-<p class="nuestrahistoria">
-    En 2001 fue fundado Porsche Engineering Group GmbH, con sede en el Centro de Desarrollo de Weissach. Con alrededor de 1700 empleados en Alemania, República Checa, Rumanía, Italia y China, Porsche Engineering se ha consolidado como uno de los proveedores de servicios de ingeniería más reconocidos y versátiles. Entre sus clientes se encuentran las marcas del Grupo Volkswagen y otros fabricantes de automóviles, así como empresas de suministros y de otros sectores. Hace tiempo que su know-how va más allá del mero desarrollo de automóviles. Los servicios abarcan desde la idea, el diseño y la construcción de prototipos hasta la producción, pasando por las pruebas, la planificación, la adquisición y la logística. También se incluye en su actividad el desarrollo de funciones, software y otros sistemas relacionados con el mundo de la digitalización. La sostenibilidad, la ecología y la eficiencia son parte de la idiosincrasia de la marca. Una tradición que lleva siendo garante de éxito desde hace 90 años.
-</p>
+    <header class="header">
+        <nav class="nav container" id="nav">
+            <h2 class="nav_logo">Porsche.</h2>
+<!--             <div class="nav_img">
+                <img src="../fotos-autos/logo-nb.jpg" alt="imagen del Logo">
+            </div> -->
+            <ul class="nav_links">
+                <li class="nav_items">
+                    <a href="../index.html" class="nav_link">inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="" class="nav_link">Sobre Nosotros</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../Paginas/Modelos.html" class="nav_link">Modelos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../Paginas/formulario.html" class="nav_link">Formulario de Reservas</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav_hamburguesa">
+                <img src="../fotos-autos/menu icono segunda opcion.png" class="nav_icon">
+            </a>
+            <a href="#" class="nav_close">
+                <img src="../fotos-autos/icon close.png" class="nav_icon">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="sobre-nosotros">
+            <h1>Sobre Nosotros</h1>
+            <br><br><br><br>
+            <p>Descubre la historia y el legado de Porsche</p>
+        </section>
+        <section class="historia">
+            <div class="historia-contenido">
+                <h2>Nuestra Historia</h2>
+                <p>Porsche, una historia de éxitos que se remonta a 1931. Fundada por Ferdinand Porsche.</p>
+                <p>En 1948 Ferry Porsche, el hijo del fundador salió a buscar el automóvil que siempre había soñado, no lo encontró y decidió construirlo. 
+                Así, bajo su dirección se sentaron las bases de lo comenzaría a ser una de las fábricas de automóviles más exclusivas de la historia.</p>
+                <p>El primer deportivo que sale de esta compañía es el Porsche 356, seguido del Porsche 911. Durante cinco décadas Ferry dirigió con gran éxito esta factoría alemana, bajo unos estándares y detalles de diseño y tecnología, aplicables hoy en día a cualquiera de sus modelos, haciéndole como el principal fabricante de vehículos deportivos del mundo.</p>
+                <img src="../fotos-autos/comienzos.jpg" alt="Historia de Porsche">
+            </div>
+        </section>
+        <section class="sueños-logros">
+            <div class="sueños-logros-contenido">
+                <h2>Sueños y Logros</h2>
+                <p>Desde sus humildes comienzos y lo largo de los años, Porsche fue persiguiendo sus sueños y alcanzado logros extraordinarios, siempre manteniendo el compromiso con la calidad y la innovación.</p>
+                <p>Los servicios abarcan desde la idea, el diseño y la construcción de prototipos hasta la producción, pasando por las pruebas, la planificación, la adquisición y la logística. También se incluye en su actividad el desarrollo de funciones, software y otros sistemas relacionados con el mundo de la digitalización. La sostenibilidad, la ecología y la eficiencia son parte de la idiosincrasia de la marca.</p>
+                <img src="../fotos-autos/logros.jpg" alt="Sueños y Logros de Porsche">
+            </div>
+        </section>
+        <section class="satisfaccion-cliente">
+            <div class="satisfaccion-cliente-contenido">
+                <h2>Satisfacción del Cliente</h2>
+                <p>Nuestros clientes son nuestra mayor prioridad. Nos enorgullece recibir testimonios positivos de quienes han experimentado la calidad y el rendimiento de nuestros automóviles Porsche.</p>
+                <div class="testimonios">
+                    <div class="testimonio">
+                        <img src="../fotos-autos/testimonio1.jpg" alt="Testimonio 1">
+                        <p>"Comprar mi Porsche fue la mejor decisión que he tomado. La experiencia de conducirlo es simplemente extraordinaria."</p>
+                        <span>- Daniel Tito</span>
+                    </div>
+                    <div class="testimonio">
+                        <img src="../fotos-autos/testimonio2.jpg" alt="testimonio 2">
+                        <p>"Porsche ha superado todas mis expectativas. La calidad y el diseño de sus autos son simplemente impecables."</p>
+                        <span>- Marina Vallejos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="footer-width nosotros">
+                <h2>Nosotros</h2>
+                <p>Lore aut corporis alias ea porro quas voluptate. A</p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li class="nav_items"><a href="index.html" class="nav_link">inicio</a></li>
+                    <li class="nav_items"><a href="Paginas/sobrenosotros.html" class="nav_link">sobre nosotros</a></li>
+                    <li class="nav_items"><a href="Paginas/Modelos.html" class="nav_link">modelos</a></li>
+                    <li class="nav_items"><a href="Paginas/formulario.html" class="nav_link">formulario de reservas</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-market-alt"></i></span>
+                        <p> Junín 250 A,S2013 DJF, Santa Fe, Argentina </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <a href="#">info@porsche.com.ar</a>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <a href="#">+54 11 4795-9786</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>©COPYRIGHT 2024 PORSCHE-PAG-FICCION AL RIGHTS RESERVERD.</p>
+        </div>
+    </footer>
 </body>
-<footer></footer>
 </html>

@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #686669;
+    background-color: #ffffff;
     font-family: "oswald", sans-serif;
     padding: 0 1.5em;
     font-style: oblique;
@@ -20,17 +20,17 @@ body{
     font-size: 3em;
 }
 .logo span{
-    color: rgb(122, 7, 7);
+    color: rgb(0, 0, 0);
 }
 .contact-wraper{
-    box-shadow: 0 0 20px rgb(139, 18, 18);
+    box-shadow: 0 0 20px rgba(96, 96, 96, 0.488);
 }
 .contact-wraper > *{
     padding: 1.5em;
 }
 
 .contact-form{
-    background-color: #9e9797;
+    background-color: #ffffff;
 }
 
 .contact-form form{
@@ -44,7 +44,7 @@ body{
 }
 
 .contact-info{
-    background-color: #ada7a7;
+    background-color: #f5f4f4;
 }
 .contact-form form p{
     margin: 0;
@@ -61,8 +61,8 @@ body{
     outline: none;    
 }
 .contact-form form button{
-    background: crimson;
-    color: bisque;
+    background: #eceaea;
+    color: rgb(0, 0, 0);
     border: 0;
     text-transform: uppercase;
     font-size: 2em;
@@ -70,7 +70,7 @@ body{
 }
 .contact-form form button :hover
 .contact-form form button :focus{
-    background: #3f7e6e;
+    background: #000000;
     color: bisque;
     outline: 0;
 }
@@ -188,7 +188,7 @@ body{
 .section-h1{
     
     font-size: 50px;
-    color: #f9fafc;
+    color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 35px;
     font-family: "Oswald", sans-serif;

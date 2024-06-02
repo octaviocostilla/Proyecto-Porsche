@@ -359,7 +359,7 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 1.5rem;
-    color: rgb(226, 228, 228);position: center;
+    color: rgb(255, 255, 255);position: center;
     margin-bottom: 10px;
     width: 100%;
     max-width: 1100px;
@@ -385,6 +385,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    font-family: "Oswald", sans-serif;
 }
 .sobre-nosotros {
     background-image: url('../fotos-autos/cars-Porsche.jpg');
@@ -393,17 +394,16 @@ footer {
     text-align: center;
     font-size: 50px;
     margin-bottom: 50px;
-    animation: colorChange 5s infinite;
+    color: #ffffff;
 }
-@keyframes colorChange {
-    0% { color: #8a0707; }
-    50% { color: #ffff00; }
-    100% { color: #ff0000; }
-}
+
+
 .sobre-nosotros h1 p{
     font-size: 40px;
     margin-top: 80px;
     display: block;
+    
+    
 }
 .historia-contenido, .sueños-logros-contenido, .satisfaccion-cliente-contenido {
     max-width: 800px;
@@ -412,14 +412,14 @@ footer {
 .historia-contenido h2, .sueños-logros-contenido h2, .satisfaccion-cliente-contenido h2{
     font-size: 40px;
     margin-bottom: 20px;
-    color: #8a0707;
+    color: #000000;
 }
 .historia-contenido img, .sueños-logros-contenido img {
     max-width: 100%;
     height: auto;
     margin-top: 40px;
     border-radius: 25px;
-    box-shadow: 0 0 30px rgba(209, 13, 6, 0.5);
+    box-shadow: 0 0 30px rgba(85, 84, 84, 0.5);
     transition:transform 0.3s;    
 }
 

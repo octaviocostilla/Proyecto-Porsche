@@ -4,22 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche</title>
+    <link href="../CSS/style.css" rel="stylesheet">
 </head>
 <body>
-   <head>
-    <h1><a href="index.html">PORSCHE</a></h1>
-    <nav>
-        <ul>
-            <li><a href="../index.html">inicio</a></li>
-            <li><a href="sobrenosotros.html">sobre nosotros</a></li>
-            <li><a href="">modelos</a></li>
-            <li><a href="formulario.html">formulario de reservas</a></li>
 
+<header class="header">
+<!--INICIO DE MENU HAMBURGUESA-->
+        <nav class="nav container" id="nav">
+            <h2 class="nav_logo">Porsche.</h2>
+            <ul class="nav_links">
+                <li class="nav_items"><a href="../index.html" class="nav_link">inicio</a></li>
+                <li class="nav_items"><a href="sobrenosotros.html" class="nav_link">sobre nosotros</a></li>
+                <li class="nav_items"><a href="Modelos.html" class="nav_link">modelos</a></li>
+                <li class="nav_items"><a href="formulario.html" class="nav_link">formulario de reservas</a></li>
+            </ul>
+            <a href="#nav" class="nav_hamburguesa">
+                <img src="../fotos-autos/menu icono segunda opcion.png" class="nav_icon">
+            </a>
+            <a href="#" class="nav_close">
+                <img src="../fotos-autos/icon close.png" class="nav_icon">
+            </a>
+    
+        </nav>
+</header>
+    
 
-        </ul>
-    </nav>
-</head>
-<h1>Modelos</h1>
+<!--INICIO DE LOS MODELOS DE LOS AUTOS-->
+<main id="main-modelos">
+    <h3 id="titulomodelos">Modelos Porsche</h3>
+    <div id="modelos">
+        <section class="auto1" ><h4 class="tituloauto">Auto 1</h4></section>
+        <section class="auto2" ><h4 class="tituloauto">Auto 2</h4></section>
+        <section class="auto3" ><h4 class="tituloauto">Auto 3</h4></section>
+        <section class="auto4" ><h4 class="tituloauto">Auto 4</h4></section>
+        <section class="auto5" ><h4 class="tituloauto">Auto 5</h4></section>
+        <section class="auto6" ><h4 class="tituloauto">Auto 6</h4></section>
+    </div>
+</main>
+    
+<!--INICIO DEL FOOTER-->
+    
+
+<footer>
+        <div class="footer-info">
+            <div class="footer-width nosotros">
+                <h2>Nosotros</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In deserunt dolore tempora, ab non dicta quaerat assumenda culpa, cupiditate voluptas doloremque possimus aut corporis alias ea porro quas voluptate. A.
+                </p>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_width link">
+                <h2>Quick Link</h2>
+                <ul>
+                    <li class="nav_items"><a href="index.html" class="nav_link">inicio</a></li>
+                    <li class="nav_items"><a href="Paginas/sobrenosotros.html" class="nav_link">sobre nosotros</a></li>
+                    <li class="nav_items"><a href="Paginas/Modelos.html" class="nav_link">modelos</a></li>
+                    <li class="nav_items"><a href="Paginas/formulario.html" class="nav_link">formulario de reservas</a></li>
+                </ul>
+            </div>
+            <div class="footer-width contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>
+                        <span><i class="fas fa-map-market-alt"></i></span>
+                        <p>
+                            Junín 250 A,S2013 DJF, Santa Fe, Argentina
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <a href="#">info@porsche.com.ar</a>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-volume"></i></span>
+                        <a href="#">+54 11 4795-9786</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>©COPYRIGHT 2024 PORSCHE-PAG-FICCION AL RIGHTS RESERVERD.</p>
+        </div>
+</footer>
 </body>
 <footer></footer>
 </html>

@@ -352,30 +352,202 @@ footer {
 }
 /*formulario*/
 
-.form{
-    background-image: url(/fotos-autos/Porsche\ negro\ de\ atras.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);position: center;
-    margin-bottom: 10px;
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 2,1fr;
-    grid-gap: 5opx;
-    margin-top: 90px;
+*{
+    box-sizing: border-box;
 }
-.tag{
-    position: top;
-    size: 25px;
+body{
+    background-color: #ffffff;
+    font-family: "oswald", sans-serif;
+    padding: 0 1.5em;
     font-style: oblique;
-    font-family: "Oswald", sans-serif;
+
 }
-/* ------------------------------------------------------------------------------------- */
+
+.content{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.logo{
+    text-align: center;
+    font-size: 3em;
+}
+.logo span{
+    color: rgb(0, 0, 0);
+}
+.contact-wraper{
+    box-shadow: 0 0 20px rgba(96, 96, 96, 0.488);
+}
+.contact-wraper > *{
+    padding: 1.5em;
+}
+
+.contact-form{
+    background-color: #ffffff;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block{
+    grid-column: 1 / 3;
+    
+}
+
+.contact-info{
+    background-color: #f5f4f4;
+}
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid crimson;
+    outline: none;    
+}
+.contact-form form button{
+    background: #eceaea;
+    color: rgb(0, 0, 0);
+    border: 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    border-radius: 25px;
+}
+.contact-form form button :hover
+.contact-form form button :focus{
+    background: #000000;
+    color: bisque;
+    outline: 0;
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+.contact-info ul li{
+    padding: 0.5em;
+}
+@media (min-width: 700px){
+    body{
+        padding: 0 4rem;
+    }
+.contact-wraper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    }
+    .contact-wraper > *{
+        padding: 2em;
+    }
+
+}
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    padding: 2em;
+    text-align: left;
+}
+
+.nav{
+    --state-close: scale(0);
+    --state-hamburguesa: scale(1);
+    --state-menu: translate(-100%);
+
+    padding: 40px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+}
+.nav:target{
+    --state-menu: translate(0);
+    --state-close: scale(1);
+    --state-hamburguesa: scale(0);
+}
+
+.nav_logo{
+    color: black;
+    font-size: 2.5rem;
+    z-index: 1;
+
+}
+.nav_hamburguesa,
+.nav_close{
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+.nav_hamburguesa{
+    transform: var(--state-hamburguesa);
+}
+.nav_close{
+    transform: var(--state-close);
+}
+
+.nav_icon{
+    width: 40px;
+}
+
+.nav_links{
+    background-color: rgba(0, 0, 0, 0.774);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    display: grid;
+    align-content: center;
+    gap: 2em;
+    padding-left: 5%;
+
+    transform: var(--state-menu);
+    transition: .3s transform;
+}
+
+.nav_items{
+    list-style: none;
+}
+.nav_link:hover{
+    color: #727272;
+}
+
+.nav_link{
+    color: #f9fafc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.section-content{
+        height: 100%;
+        display: flex;
+        align-items:flex-end;
+}
+.section-h1{
+    
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: "Oswald", sans-serif;
+
+}* ------------------------------------------------------------------------------------- */
 /* SOBRE NOSOTROS*/
 /* ------------------------------------------------------------------------------------- */
   /* Estilos de secciones */

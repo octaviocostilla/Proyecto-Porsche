@@ -6,3 +6,4 @@ console.log(name)
 var email=document.getElementById('email').value
 console.log(email)
 }
+
